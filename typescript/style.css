@@ -1,0 +1,141 @@
+:root {
+    --verde: #38b000;
+    --verde-escuro: #2d8600;
+    --amarelo: #f0b400;
+    --vermelho: #e63946;
+    --cinza: #555;
+  }
+  
+  body {
+    background-image: url(./imagens/3145241.jpg);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--verde);
+    margin-bottom: 20px;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 12px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--verde-escuro);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #f9fbfc;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .tarefa-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .tarefa-info span {
+    font-size: 16px;
+  }
+  
+  .tarefa-info time {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  li.concluida span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    transition: transform 0.2s;
+  }
+  
+  li button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Ícones coloridos */
+  .btn-check {
+    color: var(--verde);
+  }
+  
+  .btn-editar {
+    color: var(--amarelo);
+  }
+  
+  .btn-remover {
+    color: var(--vermelho);
+  }
+  
+  #contador {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 230px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
